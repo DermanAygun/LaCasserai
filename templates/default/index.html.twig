@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}LaCasserai{% endblock %}
+
+{% block body %}
+<body style="overflow-y: hidden;">
+<div class="maincover" style=" background-image: url('{{ asset('images/home/hotel3.jpg') }}')">
+    <div class="hotelwrapper">
+        <h1 style="color: white; text-align: center;">Hotel</h1>
+        <h1 style="color: white;"><strong>La Casserai</strong></h1>
+        <a href="{{ path('kamers') }}" class="btn btn" style="border: solid 1px; display: flex; justify-content: center;">Book Now</a>
+    </div>
+</div>
+
+</body>
+
+
+{% endblock %}
