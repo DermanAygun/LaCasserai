@@ -6,16 +6,22 @@ use App\Entity\Reservering;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+
 
 class ReserveringType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+
         $builder
-            ->add('checkinDate')
-            ->add('checkoutDate')
             ->add('kamer_id')
             ->add('user_id')
+            ->add('checkinDate', DateType::class, ['widget' => 'single_text', 'attr' => ['class' => 'js-datepicker form', 'min' => date('Y-m-d')]])
+            ->add('checkoutDate', DateType::class, ['widget' => 'single_text', 'attr' => ['class' => 'js-datepicker form', 'min' => date('Y-m-d')]])
+            ->add('save', SubmitType::class, ['label' => 'Book a room!'])
         ;
     }
 

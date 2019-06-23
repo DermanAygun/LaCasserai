@@ -70,4 +70,9 @@ class Image
     {
         return $this->image;
     }
+
+    public function __toString() {
+        return (string) $this->getId();
+    }
+
 }

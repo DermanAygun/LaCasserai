@@ -112,14 +112,13 @@ class __TwigTemplate_d156c29641c656ccde0dd9562a4ba9ad82b8260f04825b112a92e3c4b3c
             // line 21
             echo twig_escape_filter($this->env, $this->extensions['Vich\UploaderBundle\Twig\Extension\UploaderExtension']->asset($context["image"], "imagefile"), "html", null, true);
             echo "\" class=\"card-img-top\" style=\"width: 300px; display: block;\"></td>
-
                 <td>
                     <a href=\"";
-            // line 24
+            // line 23
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("image_show", ["id" => twig_get_attribute($this->env, $this->source, $context["image"], "id", [])]), "html", null, true);
             echo "\">show</a>
                     <a href=\"";
-            // line 25
+            // line 24
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("image_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["image"], "id", [])]), "html", null, true);
             echo "\">edit</a>
                 </td>
@@ -128,7 +127,7 @@ class __TwigTemplate_d156c29641c656ccde0dd9562a4ba9ad82b8260f04825b112a92e3c4b3c
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 29
+            // line 28
             echo "            <tr>
                 <td colspan=\"3\">no records found</td>
             </tr>
@@ -137,12 +136,12 @@ class __TwigTemplate_d156c29641c656ccde0dd9562a4ba9ad82b8260f04825b112a92e3c4b3c
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 33
+        // line 32
         echo "        </tbody>
     </table>
 
     <a href=\"";
-        // line 36
+        // line 35
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("image_new");
         echo "\">Create new</a>
 ";
@@ -166,7 +165,7 @@ class __TwigTemplate_d156c29641c656ccde0dd9562a4ba9ad82b8260f04825b112a92e3c4b3c
 
     public function getDebugInfo()
     {
-        return array (  146 => 36,  141 => 33,  132 => 29,  123 => 25,  119 => 24,  113 => 21,  109 => 20,  105 => 19,  102 => 18,  97 => 17,  84 => 6,  75 => 5,  57 => 3,  27 => 1,);
+        return array (  145 => 35,  140 => 32,  131 => 28,  122 => 24,  118 => 23,  113 => 21,  109 => 20,  105 => 19,  102 => 18,  97 => 17,  84 => 6,  75 => 5,  57 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -192,7 +191,6 @@ class __TwigTemplate_d156c29641c656ccde0dd9562a4ba9ad82b8260f04825b112a92e3c4b3c
                 <td>{{ image.id }}</td>
                 <td>{{ image.imagefile }}</td>
                 <td><img src=\"{{ vich_uploader_asset(image, 'imagefile') }}\" class=\"card-img-top\" style=\"width: 300px; display: block;\"></td>
-
                 <td>
                     <a href=\"{{ path('image_show', {'id': image.id}) }}\">show</a>
                     <a href=\"{{ path('image_edit', {'id': image.id}) }}\">edit</a>
@@ -208,6 +206,6 @@ class __TwigTemplate_d156c29641c656ccde0dd9562a4ba9ad82b8260f04825b112a92e3c4b3c
 
     <a href=\"{{ path('image_new') }}\">Create new</a>
 {% endblock %}
-", "image/index.html.twig", "C:\\xampp\\htdocs\\Henry_Symfony\\hotel_lacasserai\\templates\\image\\index.html.twig");
+", "image/index.html.twig", "C:\\xampp\\htdocs\\Henry_Symfony\\LaCasserai\\templates\\image\\index.html.twig");
     }
 }

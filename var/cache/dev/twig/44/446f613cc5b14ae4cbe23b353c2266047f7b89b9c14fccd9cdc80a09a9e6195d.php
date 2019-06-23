@@ -95,9 +95,7 @@ class __TwigTemplate_b7be4fce74cbcf3638d57fa381245189b1f3d63a7b5a4fc574983f7d4a8
         echo "\" class=\"btn btn\" style=\"border: solid 1px; display: flex; justify-content: center;\">Book Now</a>
     </div>
 </div>
-
 </body>
-
 
 ";
         
@@ -138,11 +136,9 @@ class __TwigTemplate_b7be4fce74cbcf3638d57fa381245189b1f3d63a7b5a4fc574983f7d4a8
         <a href=\"{{ path('kamers') }}\" class=\"btn btn\" style=\"border: solid 1px; display: flex; justify-content: center;\">Book Now</a>
     </div>
 </div>
-
 </body>
 
-
 {% endblock %}
-", "default/index.html.twig", "C:\\xampp\\htdocs\\Henry_Symfony\\hotel_lacasserai\\templates\\default\\index.html.twig");
+", "default/index.html.twig", "C:\\xampp\\htdocs\\Henry_Symfony\\LaCasserai\\templates\\default\\index.html.twig");
     }
 }
