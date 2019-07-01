@@ -10,7 +10,7 @@ use App\Entity\Image;
 class KamersController extends AbstractController
 {
     /**
-     * @Route("/kamers", name="kamers")
+     * @Route("/rooms", name="kamers")
      */
     public function index()
     {

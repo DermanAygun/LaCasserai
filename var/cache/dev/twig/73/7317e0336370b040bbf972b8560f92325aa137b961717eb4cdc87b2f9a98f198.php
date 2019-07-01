@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* FOSUserBundle:Registration:register.html.twig */
+/* @FOSUser/Registration/register.html.twig */
 class __TwigTemplate_3631a192d21d394c2a3eacb800a5cf93b428375d80546b6d8c0c28193ed081cb extends \Twig\Template
 {
     private $source;
@@ -24,7 +24,7 @@ class __TwigTemplate_3631a192d21d394c2a3eacb800a5cf93b428375d80546b6d8c0c28193ed
         $this->source = $this->getSourceContext();
 
         // line 1
-        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "FOSUserBundle:Registration:register.html.twig", 1);
+        $this->parent = $this->loadTemplate("@FOSUser/layout.html.twig", "@FOSUser/Registration/register.html.twig", 1);
         $this->blocks = [
             'fos_user_content' => [$this, 'block_fos_user_content'],
         ];
@@ -38,10 +38,10 @@ class __TwigTemplate_3631a192d21d394c2a3eacb800a5cf93b428375d80546b6d8c0c28193ed
     protected function doDisplay(array $context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "FOSUserBundle:Registration:register.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@FOSUser/Registration/register.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "FOSUserBundle:Registration:register.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@FOSUser/Registration/register.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
@@ -62,7 +62,7 @@ class __TwigTemplate_3631a192d21d394c2a3eacb800a5cf93b428375d80546b6d8c0c28193ed
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "fos_user_content"));
 
         // line 4
-        $this->loadTemplate("@FOSUser/Registration/register_content.html.twig", "FOSUserBundle:Registration:register.html.twig", 4)->display($context);
+        $this->loadTemplate("@FOSUser/Registration/register_content.html.twig", "@FOSUser/Registration/register.html.twig", 4)->display($context);
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -73,7 +73,7 @@ class __TwigTemplate_3631a192d21d394c2a3eacb800a5cf93b428375d80546b6d8c0c28193ed
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Registration:register.html.twig";
+        return "@FOSUser/Registration/register.html.twig";
     }
 
     public function isTraitable()
@@ -93,6 +93,6 @@ class __TwigTemplate_3631a192d21d394c2a3eacb800a5cf93b428375d80546b6d8c0c28193ed
 {% block fos_user_content %}
 {% include \"@FOSUser/Registration/register_content.html.twig\" %}
 {% endblock fos_user_content %}
-", "FOSUserBundle:Registration:register.html.twig", "C:\\xampp\\htdocs\\Henry_Symfony\\hotel_lacasserai\\src\\Resources\\FOSUserBundle\\views\\Registration\\register.html.twig");
+", "@FOSUser/Registration/register.html.twig", "C:\\xampp\\htdocs\\Henry_Symfony\\LaCasserai\\src\\Resources\\FOSUserBundle\\views\\Registration\\register.html.twig");
     }
 }

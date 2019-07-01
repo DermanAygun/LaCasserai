@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* FOSUserBundle:Registration:register_content.html.twig */
+/* @FOSUser/Registration/register_content.html.twig */
 class __TwigTemplate_98fa118d0d7c05b966a08623a929a6915a88cb9b056f728b45b661e36b65b677 extends \Twig\Template
 {
     private $source;
@@ -32,11 +32,13 @@ class __TwigTemplate_98fa118d0d7c05b966a08623a929a6915a88cb9b056f728b45b661e36b6
     protected function doDisplay(array $context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "FOSUserBundle:Registration:register_content.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@FOSUser/Registration/register_content.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "FOSUserBundle:Registration:register_content.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@FOSUser/Registration/register_content.html.twig"));
 
+        // line 1
+        echo "s";
         // line 2
         echo "
 ";
@@ -68,7 +70,7 @@ class __TwigTemplate_98fa118d0d7c05b966a08623a929a6915a88cb9b056f728b45b661e36b6
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Registration:register_content.html.twig";
+        return "@FOSUser/Registration/register_content.html.twig";
     }
 
     public function isTraitable()
@@ -78,12 +80,12 @@ class __TwigTemplate_98fa118d0d7c05b966a08623a929a6915a88cb9b056f728b45b661e36b6
 
     public function getDebugInfo()
     {
-        return array (  58 => 8,  53 => 6,  48 => 4,  44 => 3,  41 => 2,);
+        return array (  60 => 8,  55 => 6,  50 => 4,  46 => 3,  43 => 2,  41 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% trans_default_domain 'FOSUserBundle' %}
+        return new Source("s{% trans_default_domain 'FOSUserBundle' %}
 
 {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
     {{ form_widget(form) }}
@@ -91,6 +93,6 @@ class __TwigTemplate_98fa118d0d7c05b966a08623a929a6915a88cb9b056f728b45b661e36b6
         <input type=\"submit\" value=\"{{ 'registration.submit'|trans }}\" />
     </div>
 {{ form_end(form) }}
-", "FOSUserBundle:Registration:register_content.html.twig", "C:\\xampp\\htdocs\\Henry_Symfony\\hotel_lacasserai\\src\\Resources\\FOSUserBundle\\views\\Registration\\register_content.html.twig");
+", "@FOSUser/Registration/register_content.html.twig", "C:\\xampp\\htdocs\\Henry_Symfony\\LaCasserai\\src\\Resources\\FOSUserBundle\\views\\Registration\\register_content.html.twig");
     }
 }

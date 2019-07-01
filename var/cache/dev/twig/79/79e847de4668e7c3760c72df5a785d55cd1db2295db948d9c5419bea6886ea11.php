@@ -63,37 +63,140 @@ class __TwigTemplate_49ae29d05f82eba9a7962d4c1c9e45c3264c3b2ca4b17a4fb9fc38d79c6
 
         // line 4
         echo "
-<div>
-        <div class=\"image_gallery\" style=\"display: flex;\">
-                ";
-        // line 7
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["images"]) || array_key_exists("images", $context) ? $context["images"] : (function () { throw new RuntimeError('Variable "images" does not exist.', 7, $this->source); })()));
-        foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-            // line 8
-            echo "                        <div class=\"card\" style=\"width: 18rem; margin: 0 10px;\">
-                        <img src=\"";
-            // line 9
-            echo twig_escape_filter($this->env, $this->extensions['Vich\UploaderBundle\Twig\Extension\UploaderExtension']->asset($context["image"], "imagefile"), "html", null, true);
-            echo "\" class=\"card-img-top\">
-                                <div class=\"card-body\">
-                                        <h5 class=\"card-title\">Kamer Naam</h5>
-                                        <p class=\"card-text\">85\$ p/n</p>
-                                    <hr>
-                                        <p class=\"card-text\">Extra's</p>
-                                    <p class=\"card-text\">- Double Sized Bed<br>- Fast Wifi</p>
-                                        <a href=\"#\" class=\"btn btn-primary\">Book Now</a>
+    <aside id=\"colorlib-hero\">
+        <div class=\"flexslider\">
+            <ul class=\"slides\">
+                <li style=\"background-image: url(images/img_bg_5.jpg);\">
+                    <div class=\"overlay\"></div>
+                    <div class=\"container-fluid\">
+                        <div class=\"row\">
+                            <div class=\"col-md-6 col-sm-12 col-md-offset-3 slider-text\">
+                                <div class=\"slider-text-inner slider-text-inner2 text-center\">
+                                    <h2>Choose our Best</h2>
+                                    <h1>Rooms &amp; Suites</h1>
                                 </div>
+                            </div>
                         </div>
-                ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 20
-        echo "        </div>
-</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
 
+    <div id=\"colorlib-rooms\" class=\"colorlib-light-grey\">
+        <div class=\"container\">
+            <div class=\"row\">
+                <div class=\"col-md-4 room-wrap animate-box\">
+                    <a href=\"images/room-1.jpg\" class=\"room image-popup-link\" style=\"background-image: url(images/room-1.jpg);\"></a>
+                    <div class=\"desc text-center\">
+                        <span class=\"rate-star\"><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full\"></i><i class=\"icon-star-full\"></i></span>
+                        <h3><a href=\"rooms-suites.html\">Suite</a></h3>
+                        <p class=\"price\">
+                            <span class=\"currency\">\$</span>
+                            <span class=\"price-room\">149</span>
+                            <span class=\"per\">/ per night</span>
+                        </p>
+                        <ul>
+                            <li><i class=\"icon-check\"></i> Only 10 rooms are available</li>
+                            <li><i class=\"icon-check\"></i> Breakfast included</li>
+                            <li><i class=\"icon-check\"></i> Price does not include VAT &amp; services fee</li>
+                        </ul>
+                        <p><a class=\"btn btn-primary btn-book\">Book now!</a></p>
+                    </div>
+                </div>
+                <div class=\"col-md-4 room-wrap animate-box\">
+                    <a href=\"images/room-2.jpg\" class=\"room image-popup-link\" style=\"background-image: url(images/room-2.jpg);\"></a>
+                    <div class=\"desc text-center\">
+                        <span class=\"rate-star\"><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full\"></i></span>
+                        <h3><a href=\"rooms-suites.html\">Double Room</a></h3>
+                        <p class=\"price\">
+                            <span class=\"currency\">\$</span>
+                            <span class=\"price-room\">199</span>
+                            <span class=\"per\">/ per night</span>
+                        </p>
+                        <ul>
+                            <li><i class=\"icon-check\"></i> Perfect for traveling couples</li>
+                            <li><i class=\"icon-check\"></i> Breakfast included</li>
+                            <li><i class=\"icon-check\"></i> Price does not include VAT &amp; services fee</li>
+                        </ul>
+                        <p><a class=\"btn btn-primary btn-book\">Book now!</a></p>
+                    </div>
+                </div>
+                <div class=\"col-md-4 room-wrap animate-box\">
+                    <a href=\"images/room-3.jpg\" class=\"room image-popup-link\" style=\"background-image: url(images/room-3.jpg);\"></a>
+                    <div class=\"desc text-center\">
+                        <span class=\"rate-star\"><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full\"></i></span>
+                        <h3><a href=\"rooms-suites.html\">Family Room</a></h3>
+                        <p class=\"price\">
+                            <span class=\"currency\">\$</span>
+                            <span class=\"price-room\">249</span>
+                            <span class=\"per\">/ per night</span>
+                        </p>
+                        <ul>
+                            <li><i class=\"icon-check\"></i> Two double beds</li>
+                            <li><i class=\"icon-check\"></i> Babysitting facilities</li>
+                            <li><i class=\"icon-check\"></i> 1 free bed available on request</li>
+                        </ul>
+                        <p><a class=\"btn btn-primary btn-book\">Book now!</a></p>
+                    </div>
+                </div>
+                <div class=\"col-md-4 room-wrap animate-box\">
+                    <a href=\"images/room-4.jpg\" class=\"room image-popup-link\" style=\"background-image: url(images/room-4.jpg);\"></a>
+                    <div class=\"desc text-center\">
+                        <span class=\"rate-star\"><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full\"></i></span>
+                        <h3><a href=\"rooms-suites.html\">Classic Double Room</a></h3>
+                        <p class=\"price\">
+                            <span class=\"currency\">\$</span>
+                            <span class=\"price-room\">179</span>
+                            <span class=\"per\">/ per night</span>
+                        </p>
+                        <ul>
+                            <li><i class=\"icon-check\"></i> Only 10 rooms are available</li>
+                            <li><i class=\"icon-check\"></i> Breakfast included</li>
+                            <li><i class=\"icon-check\"></i> Price does not include VAT &amp; services fee</li>
+                        </ul>
+                        <p><a class=\"btn btn-primary btn-book\">Book now!</a></p>
+                    </div>
+                </div>
+                <div class=\"col-md-4 room-wrap animate-box\">
+                    <a href=\"images/room-5.jpg\" class=\"room image-popup-link\" style=\"background-image: url(images/room-5.jpg);\"></a>
+                    <div class=\"desc text-center\">
+                        <span class=\"rate-star\"><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full\"></i></span>
+                        <h3><a href=\"rooms-suites.html\">Superior Double Room</a></h3>
+                        <p class=\"price\">
+                            <span class=\"currency\">\$</span>
+                            <span class=\"price-room\">270</span>
+                            <span class=\"per\">/ per night</span>
+                        </p>
+                        <ul>
+                            <li><i class=\"icon-check\"></i> Perfect for traveling couples</li>
+                            <li><i class=\"icon-check\"></i> Breakfast included</li>
+                            <li><i class=\"icon-check\"></i> Price does not include VAT &amp; services fee</li>
+                        </ul>
+                        <p><a class=\"btn btn-primary btn-book\">Book now!</a></p>
+                    </div>
+                </div>
+                <div class=\"col-md-4 room-wrap animate-box\">
+                    <a href=\"images/room-6.jpg\" class=\"room image-popup-link\" style=\"background-image: url(images/room-6.jpg);\"></a>
+                    <div class=\"desc text-center\">
+                        <span class=\"rate-star\"><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full\"></i></span>
+                        <h3><a href=\"rooms-suites.html\">Superior Family Room</a></h3>
+                        <p class=\"price\">
+                            <span class=\"currency\"><small>\$</small></span>
+                            <span class=\"price-room\">270</span>
+                            <span class=\"per\">/ per night</span>
+                        </p>
+                        <ul>
+                            <li><i class=\"icon-check\"></i> Perfect for traveling couples</li>
+                            <li><i class=\"icon-check\"></i> Breakfast included</li>
+                            <li><i class=\"icon-check\"></i> Price does not include VAT &amp; services fee</li>
+                        </ul>
+                        <p><a class=\"btn btn-primary btn-book\">Book now!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -115,7 +218,7 @@ class __TwigTemplate_49ae29d05f82eba9a7962d4c1c9e45c3264c3b2ca4b17a4fb9fc38d79c6
 
     public function getDebugInfo()
     {
-        return array (  94 => 20,  77 => 9,  74 => 8,  70 => 7,  65 => 4,  56 => 3,  27 => 1,);
+        return array (  65 => 4,  56 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -124,25 +227,157 @@ class __TwigTemplate_49ae29d05f82eba9a7962d4c1c9e45c3264c3b2ca4b17a4fb9fc38d79c6
 
 {% block body %}
 
-<div>
-        <div class=\"image_gallery\" style=\"display: flex;\">
-                {% for image in images %}
-                        <div class=\"card\" style=\"width: 18rem; margin: 0 10px;\">
-                        <img src=\"{{ vich_uploader_asset(image, 'imagefile') }}\" class=\"card-img-top\">
-                                <div class=\"card-body\">
-                                        <h5 class=\"card-title\">Kamer Naam</h5>
-                                        <p class=\"card-text\">85\$ p/n</p>
-                                    <hr>
-                                        <p class=\"card-text\">Extra's</p>
-                                    <p class=\"card-text\">- Double Sized Bed<br>- Fast Wifi</p>
-                                        <a href=\"#\" class=\"btn btn-primary\">Book Now</a>
+    <aside id=\"colorlib-hero\">
+        <div class=\"flexslider\">
+            <ul class=\"slides\">
+                <li style=\"background-image: url(images/img_bg_5.jpg);\">
+                    <div class=\"overlay\"></div>
+                    <div class=\"container-fluid\">
+                        <div class=\"row\">
+                            <div class=\"col-md-6 col-sm-12 col-md-offset-3 slider-text\">
+                                <div class=\"slider-text-inner slider-text-inner2 text-center\">
+                                    <h2>Choose our Best</h2>
+                                    <h1>Rooms &amp; Suites</h1>
                                 </div>
+                            </div>
                         </div>
-                {% endfor %}
+                    </div>
+                </li>
+            </ul>
         </div>
-</div>
+    </aside>
 
+    <div id=\"colorlib-rooms\" class=\"colorlib-light-grey\">
+        <div class=\"container\">
+            <div class=\"row\">
+                <div class=\"col-md-4 room-wrap animate-box\">
+                    <a href=\"images/room-1.jpg\" class=\"room image-popup-link\" style=\"background-image: url(images/room-1.jpg);\"></a>
+                    <div class=\"desc text-center\">
+                        <span class=\"rate-star\"><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full\"></i><i class=\"icon-star-full\"></i></span>
+                        <h3><a href=\"rooms-suites.html\">Suite</a></h3>
+                        <p class=\"price\">
+                            <span class=\"currency\">\$</span>
+                            <span class=\"price-room\">149</span>
+                            <span class=\"per\">/ per night</span>
+                        </p>
+                        <ul>
+                            <li><i class=\"icon-check\"></i> Only 10 rooms are available</li>
+                            <li><i class=\"icon-check\"></i> Breakfast included</li>
+                            <li><i class=\"icon-check\"></i> Price does not include VAT &amp; services fee</li>
+                        </ul>
+                        <p><a class=\"btn btn-primary btn-book\">Book now!</a></p>
+                    </div>
+                </div>
+                <div class=\"col-md-4 room-wrap animate-box\">
+                    <a href=\"images/room-2.jpg\" class=\"room image-popup-link\" style=\"background-image: url(images/room-2.jpg);\"></a>
+                    <div class=\"desc text-center\">
+                        <span class=\"rate-star\"><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full\"></i></span>
+                        <h3><a href=\"rooms-suites.html\">Double Room</a></h3>
+                        <p class=\"price\">
+                            <span class=\"currency\">\$</span>
+                            <span class=\"price-room\">199</span>
+                            <span class=\"per\">/ per night</span>
+                        </p>
+                        <ul>
+                            <li><i class=\"icon-check\"></i> Perfect for traveling couples</li>
+                            <li><i class=\"icon-check\"></i> Breakfast included</li>
+                            <li><i class=\"icon-check\"></i> Price does not include VAT &amp; services fee</li>
+                        </ul>
+                        <p><a class=\"btn btn-primary btn-book\">Book now!</a></p>
+                    </div>
+                </div>
+                <div class=\"col-md-4 room-wrap animate-box\">
+                    <a href=\"images/room-3.jpg\" class=\"room image-popup-link\" style=\"background-image: url(images/room-3.jpg);\"></a>
+                    <div class=\"desc text-center\">
+                        <span class=\"rate-star\"><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full\"></i></span>
+                        <h3><a href=\"rooms-suites.html\">Family Room</a></h3>
+                        <p class=\"price\">
+                            <span class=\"currency\">\$</span>
+                            <span class=\"price-room\">249</span>
+                            <span class=\"per\">/ per night</span>
+                        </p>
+                        <ul>
+                            <li><i class=\"icon-check\"></i> Two double beds</li>
+                            <li><i class=\"icon-check\"></i> Babysitting facilities</li>
+                            <li><i class=\"icon-check\"></i> 1 free bed available on request</li>
+                        </ul>
+                        <p><a class=\"btn btn-primary btn-book\">Book now!</a></p>
+                    </div>
+                </div>
+                <div class=\"col-md-4 room-wrap animate-box\">
+                    <a href=\"images/room-4.jpg\" class=\"room image-popup-link\" style=\"background-image: url(images/room-4.jpg);\"></a>
+                    <div class=\"desc text-center\">
+                        <span class=\"rate-star\"><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full\"></i></span>
+                        <h3><a href=\"rooms-suites.html\">Classic Double Room</a></h3>
+                        <p class=\"price\">
+                            <span class=\"currency\">\$</span>
+                            <span class=\"price-room\">179</span>
+                            <span class=\"per\">/ per night</span>
+                        </p>
+                        <ul>
+                            <li><i class=\"icon-check\"></i> Only 10 rooms are available</li>
+                            <li><i class=\"icon-check\"></i> Breakfast included</li>
+                            <li><i class=\"icon-check\"></i> Price does not include VAT &amp; services fee</li>
+                        </ul>
+                        <p><a class=\"btn btn-primary btn-book\">Book now!</a></p>
+                    </div>
+                </div>
+                <div class=\"col-md-4 room-wrap animate-box\">
+                    <a href=\"images/room-5.jpg\" class=\"room image-popup-link\" style=\"background-image: url(images/room-5.jpg);\"></a>
+                    <div class=\"desc text-center\">
+                        <span class=\"rate-star\"><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full\"></i></span>
+                        <h3><a href=\"rooms-suites.html\">Superior Double Room</a></h3>
+                        <p class=\"price\">
+                            <span class=\"currency\">\$</span>
+                            <span class=\"price-room\">270</span>
+                            <span class=\"per\">/ per night</span>
+                        </p>
+                        <ul>
+                            <li><i class=\"icon-check\"></i> Perfect for traveling couples</li>
+                            <li><i class=\"icon-check\"></i> Breakfast included</li>
+                            <li><i class=\"icon-check\"></i> Price does not include VAT &amp; services fee</li>
+                        </ul>
+                        <p><a class=\"btn btn-primary btn-book\">Book now!</a></p>
+                    </div>
+                </div>
+                <div class=\"col-md-4 room-wrap animate-box\">
+                    <a href=\"images/room-6.jpg\" class=\"room image-popup-link\" style=\"background-image: url(images/room-6.jpg);\"></a>
+                    <div class=\"desc text-center\">
+                        <span class=\"rate-star\"><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full full\"></i><i class=\"icon-star-full\"></i></span>
+                        <h3><a href=\"rooms-suites.html\">Superior Family Room</a></h3>
+                        <p class=\"price\">
+                            <span class=\"currency\"><small>\$</small></span>
+                            <span class=\"price-room\">270</span>
+                            <span class=\"per\">/ per night</span>
+                        </p>
+                        <ul>
+                            <li><i class=\"icon-check\"></i> Perfect for traveling couples</li>
+                            <li><i class=\"icon-check\"></i> Breakfast included</li>
+                            <li><i class=\"icon-check\"></i> Price does not include VAT &amp; services fee</li>
+                        </ul>
+                        <p><a class=\"btn btn-primary btn-book\">Book now!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
-", "kamers/index.html.twig", "C:\\xampp\\htdocs\\Henry_Symfony\\hotel_lacasserai\\templates\\kamers\\index.html.twig");
+{#<div>#}
+    {#<div class=\"image_gallery\" style=\"display: flex;\">#}
+        {#{% for image in images %}#}
+            {#<div class=\"card\" style=\"width: 18rem; margin: 0 10px;\">#}
+                {#<img src=\"{{ vich_uploader_asset(image, 'imagefile') }}\" class=\"card-img-top\">#}
+                {#<div class=\"card-body\">#}
+                    {#<h5 class=\"card-title\">Kamer Naam</h5>#}
+                    {#<p class=\"card-text\">85\$ p/n</p>#}
+                    {#<hr>#}
+                    {#<p class=\"card-text\">Extra's</p>#}
+                    {#<p class=\"card-text\">- Double Sized Bed<br>- Fast Wifi</p>#}
+                    {#<a href=\"#\" class=\"btn btn-primary\">Book Now</a>#}
+                {#</div>#}
+            {#</div>#}
+        {#{% endfor %}#}
+    {#</div>#}
+{#</div>#}", "kamers/index.html.twig", "C:\\xampp\\htdocs\\Henry_Symfony\\LaCasserai\\templates\\kamers\\index.html.twig");
     }
 }
